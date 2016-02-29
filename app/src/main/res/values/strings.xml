@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">DC Nepal</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>My News</item>
+        <item>Event List</item>
+        <item>Video List</item>
+        <item>Hot Video List</item>
+        <item>District News</item>
+        <item>Prabash News</item>
+        <item>Music</item>
+        <item>Movie</item>
+    </string-array>
+
+    <string name="title_my_news">My News</string>
+    <string name="title_events">Events</string>
+    <string name="title_videos">Videos</string>
+
+    <!-- sample fragment text labels -->
+    <string-array name="my_news_categories">
+        <item>Featured</item>
+        <item>Popular</item>
+        <item>Latest</item>
+    </string-array>
+
+</resources>
