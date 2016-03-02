@@ -1,4 +1,4 @@
-package com.dcnepal;
+package com.dcnepal.service;
 
 import android.app.IntentService;
 import android.content.Intent;
@@ -6,14 +6,15 @@ import android.os.Bundle;
 import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
 
+import com.dcnepal.receiver.GcmReceiver;
 import com.google.android.gms.gcm.GoogleCloudMessaging;
 
-public class GCMMessageHandler extends IntentService {
+public class GcmMessageHandler extends IntentService {
 
     private LocalBroadcastManager mBroadcaster;
 
-    public GCMMessageHandler() {
-        super("GCMMessageHandler");
+    public GcmMessageHandler() {
+        super("GcmMessageHandler");
     }
 
     @Override
@@ -47,7 +48,7 @@ public class GCMMessageHandler extends IntentService {
             Log.e("GCM Exception", e.toString());
         }
 
-        GCMReceiver.completeWakefulIntent(intent);
+        GcmReceiver.completeWakefulIntent(intent);
 
     }
 }

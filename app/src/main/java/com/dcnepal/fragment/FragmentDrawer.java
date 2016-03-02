@@ -1,4 +1,4 @@
-package com.dcnepal.fragments;
+package com.dcnepal.fragment;
 
 /**
  * Created by sb on 2/29/16.

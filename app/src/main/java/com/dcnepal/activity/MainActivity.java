@@ -13,8 +13,8 @@ import android.widget.Toast;
 
 import com.dcnepal.R;
 import com.dcnepal.adapter.ViewPagerAdapter;
-import com.dcnepal.fragments.FragmentDrawer;
-import com.dcnepal.fragments.FragmentMyNewsSingleCategory;
+import com.dcnepal.fragment.FragmentDrawer;
+import com.dcnepal.fragment.FragmentMyNewsSingleCategory;
 
 public class MainActivity extends AppCompatActivity
         implements FragmentDrawer.FragmentDrawerListener {
