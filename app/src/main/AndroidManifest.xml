@@ -44,7 +44,7 @@
         </receiver>
 
         <service
-            android:name=".listener.InstanceIDListener"
+            android:name=".service.InstanceIDListener"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.android.gms.iid.InstanceID" />
