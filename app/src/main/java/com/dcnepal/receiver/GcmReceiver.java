@@ -11,7 +11,7 @@ import com.dcnepal.service.GcmMessageHandler;
 /**
  * Created by Aayush on 8/24/2015.
  */
-public class GCMBroadcastReceiver extends WakefulBroadcastReceiver {
+public class GcmReceiver extends WakefulBroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
 
