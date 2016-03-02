@@ -26,6 +26,10 @@ public class SplashActivity extends AppCompatActivity {
         v.getIndeterminateDrawable().setColorFilter(ContextCompat.getColor(this, R.color.colorPrimary),
                 android.graphics.PorterDuff.Mode.MULTIPLY);
 
+
+        //Fetch some data and remove the timer. just load activty when loading is done
+        //Mainly push GCM_ID and other fields to identify user
+
         // TODO: establish connection, fetch data or something
         final ScheduledExecutorService service = Executors.newSingleThreadScheduledExecutor();
         service.schedule(new Runnable() {

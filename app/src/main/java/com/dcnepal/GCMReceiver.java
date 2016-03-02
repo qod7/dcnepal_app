@@ -9,13 +9,13 @@ import android.support.v4.content.WakefulBroadcastReceiver;
 /**
  * Created by Aayush on 8/24/2015.
  */
-public class GCMBroadcastReceiver extends WakefulBroadcastReceiver {
+public class GCMReceiver extends WakefulBroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
 
-        // Explicitly specify that GcmMessageHandler will handle the intent.
+        // Explicitly specify that GCMMessageHandler will handle the intent.
         ComponentName comp = new ComponentName(context.getPackageName(),
-                GcmMessageHandler.class.getName());
+                GCMMessageHandler.class.getName());
 
         // Start the service, keeping the device awake while it is launching.
         startWakefulService(context, (intent.setComponent(comp)));

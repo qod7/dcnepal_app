@@ -8,12 +8,12 @@ import android.util.Log;
 
 import com.google.android.gms.gcm.GoogleCloudMessaging;
 
-public class GcmMessageHandler extends IntentService {
+public class GCMMessageHandler extends IntentService {
 
     private LocalBroadcastManager mBroadcaster;
 
-    public GcmMessageHandler() {
-        super("GcmMessageHandler");
+    public GCMMessageHandler() {
+        super("GCMMessageHandler");
     }
 
     @Override
@@ -28,11 +28,6 @@ public class GcmMessageHandler extends IntentService {
 
         GoogleCloudMessaging gcm = GoogleCloudMessaging.getInstance(this);
 
-//        // The getMessageType() intent parameter must be the intent you received
-//        // in your BroadcastReceiver.
-//        String messageType = gcm.getMessageType(intent);
-
-        // Do something with the received message
         try{
             String messageType = (String) extras.get("TYPE");
 
@@ -52,7 +47,7 @@ public class GcmMessageHandler extends IntentService {
             Log.e("GCM Exception", e.toString());
         }
 
-        GCMBroadcastReceiver.completeWakefulIntent(intent);
+        GCMReceiver.completeWakefulIntent(intent);
 
     }
 }
