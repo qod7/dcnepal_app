@@ -1,4 +1,4 @@
-package com.dcnepal;
+package com.dcnepal.receiver;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

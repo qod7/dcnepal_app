@@ -1,4 +1,4 @@
-package com.dcnepal;
+package com.dcnepal.service;
 
 import android.app.IntentService;
 import android.content.Intent;
@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
 
+import com.dcnepal.receiver.GCMBroadcastReceiver;
 import com.google.android.gms.gcm.GoogleCloudMessaging;
 
 public class GcmMessageHandler extends IntentService {

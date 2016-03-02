@@ -1,10 +1,12 @@
-package com.dcnepal;
+package com.dcnepal.receiver;
 
 import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v4.content.WakefulBroadcastReceiver;
+
+import com.dcnepal.service.GcmMessageHandler;
 
 /**
  * Created by Aayush on 8/24/2015.
